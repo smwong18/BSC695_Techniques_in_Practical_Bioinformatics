@@ -1,0 +1,90 @@
+Test1
+
+isuru@BartonLab_Isu MINGW64 ~
+$ git clone https://github.com/mrmckain/BSC695_Techniques_in_Practical_Bioinformatics.git
+Cloning into 'BSC695_Techniques_in_Practical_Bioinformatics'...
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 7 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (7/7), done.
+Resolving deltas: 100% (1/1), done.
+
+isuru@BartonLab_Isu MINGW64 ~
+$ Git add yourname.txt
+fatal: not a git repository (or any of the parent directories): .git
+
+isuru@BartonLab_Isu MINGW64 ~
+$ cd BSCBSC695_Techniques_in_Practical_Bioinformatics
+bash: cdcd: command not found
+
+isuru@BartonLab_Isu MINGW64 ~
+$ Git add yourname.txt
+fatal: not a git repository (or any of the parent directories): .git
+
+isuru@BartonLab_Isu MINGW64 ~
+$ cd ^[[200~cd BSCBSC695_Techniques_in_Practical_Bioinformatics
+bash: cd: too many arguments
+
+isuru@BartonLab_Isu MINGW64 ~
+$ cd BSC695_Techniques_in_Practical_Bioinformatics
+
+isuru@BartonLab_Isu MINGW64 ~/BSC695_Techniques_in_Practical_Bioinformatics (main)
+$ ls
+README.md
+
+isuru@BartonLab_Isu MINGW64 ~/BSC695_Techniques_in_Practical_Bioinformatics (main)
+$ echo "Howdy"
+Howdy
+
+isuru@BartonLab_Isu MINGW64 ~/BSC695_Techniques_in_Practical_Bioinformatics (main)
+$ echo "my favourite color is red" > Isuru.txt
+
+isuru@BartonLab_Isu MINGW64 ~/BSC695_Techniques_in_Practical_Bioinformatics (main)
+$ ls
+Isuru.txt  README.md
+
+isuru@BartonLab_Isu MINGW64 ~/BSC695_Techniques_in_Practical_Bioinformatics (main)
+$ cat Isuru.txt
+my favourite color is red
+
+isuru@BartonLab_Isu MINGW64 ~/BSC695_Techniques_in_Practical_Bioinformatics (main)
+$ git add Isuru.txt
+warning: in the working copy of 'Isuru.txt', LF will be replaced by CRLF the next time Git touches it
+
+isuru@BartonLab_Isu MINGW64 ~/BSC695_Techniques_in_Practical_Bioinformatics (main)
+$ git commit -m "Isuru.txt"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'isuru@BartonLab_Isu.(none)')
+
+isuru@BartonLab_Isu MINGW64 ~/BSC695_Techniques_in_Practical_Bioinformatics (main)
+$ git config --global user.email "isurupriyaranga@gmail.com"
+
+isuru@BartonLab_Isu MINGW64 ~/BSC695_Techniques_in_Practical_Bioinformatics (main)
+$ git config --global user.name "IsuruS94"
+
+isuru@BartonLab_Isu MINGW64 ~/BSC695_Techniques_in_Practical_Bioinformatics (main)
+$ git commit -m "Added Isuru.txt file."
+[main c24b144] Added Isuru.txt file.
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Isuru.txt
+
+isuru@BartonLab_Isu MINGW64 ~/BSC695_Techniques_in_Practical_Bioinformatics (main)
+$ git push
+info: please complete authentication in your browser...
+remote: Permission to mrmckain/BSC695_Techniques_in_Practical_Bioinformatics.git denied to IsuruS94.
+fatal: unable to access 'https://github.com/mrmckain/BSC695_Techniques_in_Practical_Bioinformatics.git/': The requested URL returned error: 403
+
+isuru@BartonLab_Isu MINGW64 ~/BSC695_Techniques_in_Practical_Bioinformatics (main)
+$
