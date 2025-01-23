@@ -1,4 +1,4 @@
-Test
+New Test
 
 BSC 695 -- Techniques in Practical Bioinformatics
 =============
